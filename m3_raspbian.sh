@@ -24,14 +24,3 @@ sudo /etc/init.d/rpimonitor update
 ## add ip port external_port protocol
 upnpc -a 192.168.0.102 8888 28888 tcp
 
-# Install node js
-wget https://raw.githubusercontent.com/mansehr/scripts/master/create_nodejs4x.sh
-chmod +x create_nodejs4x.sh
-./create_nodejs4x.sh
-rm create_nodejs4x.sh
-
-# Test opencv
-mkdir node_opencv
-cd node_opencv
-npm install opencv
-
