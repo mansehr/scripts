@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# To run this file simply run this from the command line:
+: '
+wget https://raw.githubusercontent.com/mansehr/scripts/master/install_opencv.sh
+chmod +x install_opencv.sh
+nohup ./install_opencv.sh &
+'
+
 # http://docs.opencv.org/3.0-last-rst/doc/tutorials/introduction/linux_install/linux_install.html
 
 # Install scripts
