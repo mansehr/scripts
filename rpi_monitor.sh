@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Setup script for the Banana-pi-m3 with Raspbian
+# Setup script for the a soc board with Raspbian
 
 # First run raspi-config to increase the storage space
 :'
@@ -9,8 +9,6 @@
 '
 
 sudo apt-get update
-
-sudo apt-get -y install miniupnpc
 
 # Rpi monitor
 sudo apt-get -y install apt-transport-https ca-certificates
@@ -21,6 +19,7 @@ sudo apt-get update
 sudo apt-get -y install rpimonitor
 sudo /etc/init.d/rpimonitor update
 
+# sudo apt-get -y install miniupnpc
 ## add ip port external_port protocol
-upnpc -a 192.168.0.102 8888 28888 tcp
+# upnpc -a 192.168.0.102 8888 28888 tcp
 
